@@ -3,6 +3,8 @@ import { Demo } from './pages/demo/demo';
 import { Exo } from './pages/exo/exo';
 import { Binding as bdemo } from './pages/demo/components/binding/binding';
 import { Binding as bexo } from './pages/exo/components/binding/binding';
+import { Pipes as dpipes } from './pages/demo/components/pipes/pipes';
+import { Pipes as epipes } from './pages/exo/components/pipes/pipes';
 
 export const routes: Routes = [
   {
@@ -12,8 +14,12 @@ export const routes: Routes = [
       {
         path: 'binding',
         component: bdemo,
-      }
-    ]
+      },
+      {
+        path: 'pipes',
+        component: dpipes,
+      },
+    ],
   },
   {
     path: 'exo',
@@ -22,8 +28,12 @@ export const routes: Routes = [
       {
         path: 'binding',
         component: bexo,
-      }
-    ]
+      },
+      {
+        path: 'pipes',
+        component: epipes,
+      },
+    ],
   },
   // Doit rester en dernier, sinon bypass les autres routes.
   {
