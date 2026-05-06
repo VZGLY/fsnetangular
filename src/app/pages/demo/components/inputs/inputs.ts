@@ -14,7 +14,6 @@ export class Inputs {
   firstnameParent = signal<string | undefined>(undefined);
 
   // Output
-
   nombreDeEnfant = signal<number | undefined>(undefined);
 
   receiveNumber(value: number) {

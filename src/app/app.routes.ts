@@ -8,6 +8,7 @@ import { Pipes as epipes } from './pages/exo/components/pipes/pipes';
 import { Directives as ddirectives } from './pages/demo/components/directives/directives';
 import { Directives as edirectives } from './pages/exo/components/directives/directives';
 import { Inputs } from './pages/demo/components/inputs/inputs';
+import { Parent } from './pages/exo/components/inputs/parent/parent';
 
 export const routes: Routes = [
   {
@@ -47,6 +48,10 @@ export const routes: Routes = [
       {
         path: 'directives',
         component: edirectives,
+      },
+      {
+        path: 'inputs',
+        component: Parent,
       },
     ],
   },
